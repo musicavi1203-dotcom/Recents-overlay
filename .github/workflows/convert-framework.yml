@@ -13,8 +13,8 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Install enjarify
-        run: pip install enjarify
+      - name: Install enjarify from GitHub
+        run: pip install git+https://github.com/Storyyeller/enjarify.git
 
       - name: Rebuild framework.jar and convert to class jars
         run: |
